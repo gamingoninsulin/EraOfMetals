@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "eraofmetalsid",
+  "version": "${version}",
+
+  "name": "Era Of Metals",
+  "description": "Era Of Metals adds a variety of new metals to the game with the corresponding tools & equipment...",
+  "authors": [
+    "GamingOnInsulin"
+  ],
+  "contact": {
+    "homepage": "Empty",
+    "sources": "Empty"
+  },
+
+  "license": "MIT Licence",
+  "icon": "assets/eraofmetalsid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.gamingoninsulin.eraofmetals.EraOfMetalsMain"
+    ]
+  },
+  "mixins": [
+    "eraofmetalsid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
