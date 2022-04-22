@@ -10,7 +10,7 @@ Era Of Metals is a mod that addes more metals to the game in a unique way trough
 its in early stage PRE PRE PRE ALPHA Version 0.0.0(.1)
 
 
-LICENCE:
+LICENCE:<br>
 MIT License
 <br><br>
 Copyright (c) 2022 EraOFMetals
