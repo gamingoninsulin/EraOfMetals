@@ -12,7 +12,7 @@ its in early stage PRE PRE PRE ALPHA Version 0.0.0(.1)
 <hr>
 <br>
 LICENCE:<br>
-### MIT License
+MIT License
 <br><br>
 Copyright (c) 2022 EraOFMetals
 <br><br>
