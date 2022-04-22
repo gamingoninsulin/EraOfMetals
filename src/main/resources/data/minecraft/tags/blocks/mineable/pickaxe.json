@@ -325,6 +325,11 @@
     "#minecraft:anvil",
     "#minecraft:cauldrons",
     "#minecraft:rails",
-    "minecraft:conduit"
+    "minecraft:conduit",
+
+    "eraofmetalsid:silver_block",
+    "eraofmetalsid:raw_silver_block",
+    "eraofmetalsid:silver_ore",
+    "eraofmetalsid:deepslate_silver_ore"
   ]
 }

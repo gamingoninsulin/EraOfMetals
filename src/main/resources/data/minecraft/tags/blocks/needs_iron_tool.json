@@ -12,6 +12,11 @@
     "minecraft:gold_ore",
     "minecraft:deepslate_gold_ore",
     "minecraft:redstone_ore",
-    "minecraft:deepslate_redstone_ore"
+    "minecraft:deepslate_redstone_ore",
+
+    "eraofmetalsid:silver_block",
+    "eraofmetalsid:raw_silver_block",
+    "eraofmetalsid:silver_ore",
+    "eraofmetalsid:deepslate_silver_ore"
   ]
 }
