@@ -6,5 +6,7 @@
   "block.eraofmetalsid.silver_ore": "Silver Ore",
   "block.eraofmetalsid.deepslate_silver_ore": "Deepslate Silver Ore",
   "block.eraofmetalsid.silver_block": "Silver Block",
-  "block.eraofmetalsid.raw_silver_block": "Raw Silver Block"
+  "block.eraofmetalsid.raw_silver_block": "Raw Silver Block",
+
+  "itemGroup.eraofmetalsid.metalstab": "Era Of Metals"
 }

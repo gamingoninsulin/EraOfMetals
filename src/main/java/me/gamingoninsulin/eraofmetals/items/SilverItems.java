@@ -7,12 +7,17 @@ import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 import static me.gamingoninsulin.eraofmetals.EraOfMetalsMain.MOD_ID;
+import static me.gamingoninsulin.eraofmetals.items.ModItemGroup.metalsTab;
 
 public class SilverItems {
+
+    // ############################### MOD ITEMS ####################################################################
 
     // helper register ITEMS
     private static Item registerItem(String name, Item item){
@@ -25,6 +30,8 @@ public class SilverItems {
         System.out.println("Registering Copper Items for " + MOD_ID);
 
     }
+
+    // ############################### MOD BLOCK ####################################################################
 
     // Blocks
     private static Block registerBlock(String name, Block block, ItemGroup group) {
@@ -50,32 +57,32 @@ public class SilverItems {
 
     // raw silver
     public static final Item RAW_SILVER = registerItem("raw_silver",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC))); // misc group for now !
+            new Item(new FabricItemSettings().group(metalsTab)));
 
     // silver ingot
     public static final Item SILVER_INGOT = registerItem("silver_ingot",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC))); // misc group for now !
+            new Item(new FabricItemSettings().group(metalsTab)));
 
     // silver nugget
     public static final Item SILVER_NUGGET = registerItem("silver_nugget",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC))); // misc group for now !
+            new Item(new FabricItemSettings().group(metalsTab)));
 
     // ############################### MOD BLOCK ####################################################################
 
     // silver ore
     public static final Block SILVER_ORE = registerBlock("silver_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ItemGroup.MISC); // misc group for now !
+            new Block(FabricBlockSettings.of(Material.STONE).hardness(3f).requiresTool()), metalsTab);
 
     // deepslate silver ore
     public static final Block DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ItemGroup.MISC); // misc group for now !
+            new Block(FabricBlockSettings.of(Material.STONE).hardness(4.5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)), metalsTab);
 
     // silver block
     public static final Block SILVER_BLOCK = registerBlock("silver_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ItemGroup.MISC); // misc group for now !
+            new Block(FabricBlockSettings.of(Material.METAL).hardness(5f).requiresTool()), metalsTab);
 
     // raw silver block
     public static final Block RAW_SILVER_BLOCK = registerBlock("raw_silver_block",
-            new Block(FabricBlockSettings.of(Material.AGGREGATE).strength(6f).requiresTool()), ItemGroup.MISC); // misc group for now !
+            new Block(FabricBlockSettings.of(Material.METAL).hardness(5f).requiresTool() ), metalsTab);
 
 }
