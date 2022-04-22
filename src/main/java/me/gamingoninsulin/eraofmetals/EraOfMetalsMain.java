@@ -10,5 +10,6 @@ public class EraOfMetalsMain implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		SilverItems.registerSilverItems();
+		SilverItems.registerSilverBlocks();
 	}
 }
