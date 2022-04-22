@@ -8,10 +8,11 @@ and then i came up whit Era Of Metals,
 <br><br>
 Era Of Metals is a mod that addes more metals to the game in a unique way trough a vanilla friendly smelter that can be automated as well.
 its in early stage PRE PRE PRE ALPHA Version 0.0.0(.1)
-
-
+<br>
+<hr>
+<br>
 LICENCE:<br>
-MIT License
+###MIT License
 <br><br>
 Copyright (c) 2022 EraOFMetals
 <br><br>
