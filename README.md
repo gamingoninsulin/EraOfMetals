@@ -11,6 +11,47 @@ its in early stage PRE PRE PRE ALPHA Version 0.0.0(.1)
 <br>
 <hr>
 <br>
+
+preview about whats already in the mod:
+
+
+
+#### copper nugget
+![copper nugget](https://i.imgur.com/hgs6spz.png)
+	
+#### raw silver , raw silver block + silver ore and deepslate ore
+![raw silver block](https://i.imgur.com/mDIXrQV.png)
+![raw silver](https://i.imgur.com/ohTlcEs.png)
+![silver ore](https://i.imgur.com/6dvdlKy.png)
+![deepslate silver ore](https://i.imgur.com/fGHu3wV.png)
+ 
+#### silver nugget, ingot and block
+![silver block](https://i.imgur.com/AOKFmTx.png)
+![silver ingot](https://i.imgur.com/zcdy8dz.png)
+![silver nugget](https://i.imgur.com/DfxdAfh.png)
+ 
+#### raw/cooked turinp 
+![raw turnip](https://i.imgur.com/aNiCjwG.png)
+![cooked turnip](https://i.imgur.com/v6m5pdT.png)
+
+
+#### pressure coal, coal chunk and block
+![pressure coal block](https://i.imgur.com/ZQAM3j4.png)
+![pressure coal](https://i.imgur.com/572bPvp.png)
+![pressure coal  chunk](https://i.imgur.com/fMare8s.png)
+ 
+#### silver prospector
+![silver prospector](https://i.imgur.com/55nEW2k.png)
+ 
+#### special grass
+![special grass](https://i.imgur.com/NwU5Ht9.png)
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
 LICENCE:<br>
 MIT License
 <br><br>
