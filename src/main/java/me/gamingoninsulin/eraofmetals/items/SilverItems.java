@@ -36,7 +36,7 @@ public class SilverItems {
     // ############################### MOD BLOCK ####################################################################
 
     // Blocks
-    private static Block registerBlock(String name, Block block, ItemGroup group) {
+    private static Block registerSilverBlock(String name, Block block, ItemGroup group) {
      registerBlockItem(name , block, group);
      return Registry.register(Registry.BLOCK, new Identifier(MOD_ID, name), block);
     }
@@ -69,6 +69,9 @@ public class SilverItems {
     public static final Item SILVER_NUGGET = registerItem("silver_nugget",
             new Item(new FabricItemSettings().group(metalsTab)));
 
+
+    // ############################### MOD TOOLS ####################################################################
+
     // silver prospector
     public static final Item SILVER_PROSPECTOR = registerItem("silver_prospector",
             new SilverProspectorItem(new FabricItemSettings().group(metalsTab).maxDamage(64)));
@@ -76,22 +79,20 @@ public class SilverItems {
     // ############################### MOD BLOCK ####################################################################
 
     // silver ore
-    public static final Block SILVER_ORE = registerBlock("silver_ore",
+    public static final Block SILVER_ORE = registerSilverBlock("silver_ore",
             new Block(FabricBlockSettings.of(Material.STONE).hardness(3f).requiresTool()), metalsTab);
 
     // deepslate silver ore
-    public static final Block DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
+    public static final Block DEEPSLATE_SILVER_ORE = registerSilverBlock("deepslate_silver_ore",
             new Block(FabricBlockSettings.of(Material.STONE).hardness(4.5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)), metalsTab);
 
     // silver block
-    public static final Block SILVER_BLOCK = registerBlock("silver_block",
+    public static final Block SILVER_BLOCK = registerSilverBlock("silver_block",
             new Block(FabricBlockSettings.of(Material.METAL).hardness(5f).requiresTool()), metalsTab);
 
     // raw silver block
-    public static final Block RAW_SILVER_BLOCK = registerBlock("raw_silver_block",
+    public static final Block RAW_SILVER_BLOCK = registerSilverBlock("raw_silver_block",
             new Block(FabricBlockSettings.of(Material.METAL).hardness(5f).requiresTool() ), metalsTab);
 
-    // Speedy Silver Block
-    public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
-            new CustomBlock(FabricBlockSettings.of(Material.METAL).hardness(5f).requiresTool() ), metalsTab);
+
 }

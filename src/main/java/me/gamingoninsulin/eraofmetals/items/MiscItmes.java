@@ -1,7 +1,10 @@
 package me.gamingoninsulin.eraofmetals.items;
 
+import me.gamingoninsulin.eraofmetals.items.custom.CustomBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -11,7 +14,7 @@ import net.minecraft.util.registry.Registry;
 import static me.gamingoninsulin.eraofmetals.EraOfMetalsMain.MOD_ID;
 import static me.gamingoninsulin.eraofmetals.items.ModItemGroup.metalsTab;
 
-public class CopperItems {
+public class MiscItmes {
 
     // ############################### MOD ITEMS ####################################################################
 
@@ -22,15 +25,15 @@ public class CopperItems {
 
 
     // register mod ITEMS
-    public static void registerCopperItems() {
-        System.out.println("Registering Copper Items for " + MOD_ID);
+    public static void registerMiscItems() {
+        System.out.println("Registering Silver Items for " + MOD_ID);
 
     }
 
     // ############################### MOD BLOCK ####################################################################
 
     // Blocks
-    private static Block registerCopperBlock(String name, Block block, ItemGroup group) {
+    private static Block registerMiscBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name , block, group);
         return Registry.register(Registry.BLOCK, new Identifier(MOD_ID, name), block);
     }
@@ -43,20 +46,21 @@ public class CopperItems {
 
     // register mod BLOCKS
     public static void registerSilverBlocks() {
-        System.out.println("Registering Copper Blocks for " + MOD_ID);
+        System.out.println("Registering Silver Blocks for " + MOD_ID);
 
     }
+
 // ############################### MOD ITEMS AND BLOCK ##############################################################
 
     // ############################### MOD ITEMS ####################################################################
 
-    // copper nugget
-    public static final Item COPPER_NUGGET = registerItem("copper_nugget",
-            new Item(new FabricItemSettings().group(metalsTab)));
-
+    // Speedy Block
+    public static final Block SPEEDY_BLOCK = registerMiscBlock("speedy_block",
+            new CustomBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.6f).requiresTool() ), metalsTab);
 
     // ############################### MOD TOOLS ####################################################################
 
     // ############################### MOD BLOCK ####################################################################
+
 
 }
