@@ -20,6 +20,9 @@ public class ModRegistries {
         // pressure coal
         registry.add(PRESSURE_COAL, 2000);
 
+        // pressure coal block
+        registry.add(PRESSURE_COAL_BLOCK,18000);
+
     }
 
 }

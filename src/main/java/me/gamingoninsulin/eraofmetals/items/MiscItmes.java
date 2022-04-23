@@ -71,6 +71,10 @@ public class MiscItmes {
     public static final Item PRESSURE_COAL = registerMiscItem("pressure_coal",
             new Item(new FabricItemSettings().group(metalsTab)));
 
+    // pressure coal
+    public static final Item PRESSURE_COAL_BLOCK = registerMiscItem("pressure_coal_block",
+            new Item(new FabricItemSettings().group(metalsTab)));
+
     // ############################### MOD TOOLS ####################################################################
 
     // ############################### MOD BLOCK ####################################################################

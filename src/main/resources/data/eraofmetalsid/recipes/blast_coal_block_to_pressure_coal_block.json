@@ -2,9 +2,9 @@
   "type": "minecraft:blasting",
   "group": "coal",
   "ingredient": {
-    "item": "minecraft:coal"
+    "item": "minecraft:coal_block"
   },
-  "result": "eraofmetalsid:pressure_coal",
+  "result": "eraofmetalsid:pressure_coal_block",
   "experience": 0.7,
   "cookingtime": 150
 }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "coal",
+  "ingredients": [
+    {
+      "item": "eraofmetalsid:pressure_coal_block"
+    }
+  ],
+  "result": {
+    "item": "eraofmetalsid:pressure_coal",
+    "count": 9
+  }
+}

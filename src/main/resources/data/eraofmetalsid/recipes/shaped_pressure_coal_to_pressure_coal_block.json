@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "coal",
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "eraofmetalsid:pressure_coal"
+    }
+  },
+  "result": {
+    "item": "eraofmetalsid:pressure_coal_block"
+  }
+}
