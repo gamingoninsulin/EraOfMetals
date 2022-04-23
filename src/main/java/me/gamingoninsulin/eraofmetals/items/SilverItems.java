@@ -1,6 +1,5 @@
 package me.gamingoninsulin.eraofmetals.items;
 
-import me.gamingoninsulin.eraofmetals.items.custom.CustomBlock;
 import me.gamingoninsulin.eraofmetals.items.custom.SilverProspectorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -9,7 +8,6 @@ import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.PickaxeItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -19,21 +17,21 @@ import static me.gamingoninsulin.eraofmetals.items.ModItemGroup.metalsTab;
 
 public class SilverItems {
 
-    // ############################### MOD ITEMS ####################################################################
+    // ############################### MOD ITEMS SETTINGS ###########################################################
 
     // helper register ITEMS
-    private static Item registerItem(String name, Item item){
+    private static Item registerSilverItem(String name, Item item){
      return Registry.register(Registry.ITEM, new Identifier(MOD_ID, name), item);
     }
 
 
-    // register mod ITEMS
+    // register mod ITEMS to (EraOfMetalsMain.java)
     public static void registerSilverItems() {
         System.out.println("Registering Silver Items for " + MOD_ID);
 
     }
 
-    // ############################### MOD BLOCK ####################################################################
+    // ############################### MOD BLOCK SETTINGS ###########################################################
 
     // Blocks
     private static Block registerSilverBlock(String name, Block block, ItemGroup group) {
@@ -41,13 +39,13 @@ public class SilverItems {
      return Registry.register(Registry.BLOCK, new Identifier(MOD_ID, name), block);
     }
 
-    // helper register BLOCKS
+    // helper register BLOCKS (items in hand)
     private static Item registerBlockItem(String name, Block block, ItemGroup group){
         return Registry.register(Registry.ITEM, new Identifier(MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings().group(group)));
     }
 
-    // register mod BLOCKS
+    // register mod BLOCKS to (EraOfMetalsMain.java)
     public static void registerSilverBlocks() {
         System.out.println("Registering Silver Blocks for " + MOD_ID);
 
@@ -58,33 +56,27 @@ public class SilverItems {
     // ############################### MOD ITEMS ####################################################################
 
     // raw silver
-    public static final Item RAW_SILVER = registerItem("raw_silver",
+    public static final Item RAW_SILVER = registerSilverItem("raw_silver",
             new Item(new FabricItemSettings().group(metalsTab)));
 
     // silver ingot
-    public static final Item SILVER_INGOT = registerItem("silver_ingot",
+    public static final Item SILVER_INGOT = registerSilverItem("silver_ingot",
             new Item(new FabricItemSettings().group(metalsTab)));
 
     // silver nugget
-    public static final Item SILVER_NUGGET = registerItem("silver_nugget",
+    public static final Item SILVER_NUGGET = registerSilverItem("silver_nugget",
             new Item(new FabricItemSettings().group(metalsTab)));
 
 
     // ############################### MOD TOOLS ####################################################################
 
     // silver prospector
-    public static final Item SILVER_PROSPECTOR = registerItem("silver_prospector",
+    public static final Item SILVER_PROSPECTOR = registerSilverItem("silver_prospector",
             new SilverProspectorItem(new FabricItemSettings().group(metalsTab).maxDamage(64)));
 
     // ############################### MOD BLOCK ####################################################################
 
-    // silver ore
-    public static final Block SILVER_ORE = registerSilverBlock("silver_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).hardness(3f).requiresTool()), metalsTab);
 
-    // deepslate silver ore
-    public static final Block DEEPSLATE_SILVER_ORE = registerSilverBlock("deepslate_silver_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).hardness(4.5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)), metalsTab);
 
     // silver block
     public static final Block SILVER_BLOCK = registerSilverBlock("silver_block",

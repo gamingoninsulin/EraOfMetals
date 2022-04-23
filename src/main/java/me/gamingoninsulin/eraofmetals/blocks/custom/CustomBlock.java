@@ -1,4 +1,4 @@
-package me.gamingoninsulin.eraofmetals.items.custom;
+package me.gamingoninsulin.eraofmetals.blocks.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -19,6 +19,7 @@ public class CustomBlock extends Block {
         super(settings);
     }
 
+    /*
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
 
@@ -31,8 +32,10 @@ public class CustomBlock extends Block {
             }
         }
 
+
         return ActionResult.SUCCESS;
     }
+    */
 
     // step on (status effect)
     @Override

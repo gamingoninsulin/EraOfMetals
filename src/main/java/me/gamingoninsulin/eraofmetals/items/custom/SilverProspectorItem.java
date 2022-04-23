@@ -1,8 +1,9 @@
 package me.gamingoninsulin.eraofmetals.items.custom;
 
+import me.gamingoninsulin.eraofmetals.blocks.EraOfMetalsOres;
+import me.gamingoninsulin.eraofmetals.items.SilverItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemUsageContext;
@@ -11,7 +12,6 @@ import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 
-import static net.minecraft.block.Blocks.COPPER_ORE;
 
 
 public class SilverProspectorItem extends Item {
@@ -63,7 +63,7 @@ public class SilverProspectorItem extends Item {
 
     // all the valueble block list
     private boolean isValuebleBlock(Block block) {
-        return  block == COPPER_ORE
+        return     block == Blocks.COPPER_ORE
                 || block == Blocks.DEEPSLATE_COPPER_ORE
 
                 || block == Blocks.DEEPSLATE_COAL_ORE
@@ -85,10 +85,10 @@ public class SilverProspectorItem extends Item {
                 || block == Blocks.DEEPSLATE_LAPIS_ORE
 
                 || block == Blocks.REDSTONE_ORE
-                || block == Blocks.DEEPSLATE_REDSTONE_ORE; // delete this when the silver ore spawns
+                || block == Blocks.DEEPSLATE_REDSTONE_ORE
 
                 // Era OF Metals Ore
-                //|| block == SilverItems.SILVER_ORE
-                //|| block == SilverItems.DEEPSLATE_SILVER_ORE;
+                || block == EraOfMetalsOres.SILVER_ORE
+                || block == EraOfMetalsOres.DEEPSLATE_SILVER_ORE;
     }
 }

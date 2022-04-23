@@ -8,6 +8,7 @@ import net.minecraft.util.Identifier;
 import static me.gamingoninsulin.eraofmetals.EraOfMetalsMain.MOD_ID;
 
 public class ModItemGroup {
+    // era of metals creative tab
     public static final ItemGroup metalsTab = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "metalstab"),
             () -> new ItemStack(SilverItems.SILVER_INGOT));
 }

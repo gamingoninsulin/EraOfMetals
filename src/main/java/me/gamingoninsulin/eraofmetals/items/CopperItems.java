@@ -13,21 +13,21 @@ import static me.gamingoninsulin.eraofmetals.items.ModItemGroup.metalsTab;
 
 public class CopperItems {
 
-    // ############################### MOD ITEMS ####################################################################
+    // ############################### MOD ITEMS SETTINGS ###########################################################
 
     // helper register ITEMS
-    private static Item registerItem(String name, Item item){
+    private static Item registerCopperItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(MOD_ID, name), item);
     }
 
 
-    // register mod ITEMS
+    // register mod ITEMS to (EraOfMetalsMain.java)
     public static void registerCopperItems() {
         System.out.println("Registering Copper Items for " + MOD_ID);
 
     }
 
-    // ############################### MOD BLOCK ####################################################################
+    // ############################### MOD BLOCK SETTINGS ###########################################################
 
     // Blocks
     private static Block registerCopperBlock(String name, Block block, ItemGroup group) {
@@ -35,13 +35,13 @@ public class CopperItems {
         return Registry.register(Registry.BLOCK, new Identifier(MOD_ID, name), block);
     }
 
-    // helper register BLOCKS
+    // helper register BLOCKS (items in hand)
     private static Item registerBlockItem(String name, Block block, ItemGroup group){
         return Registry.register(Registry.ITEM, new Identifier(MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings().group(group)));
     }
 
-    // register mod BLOCKS
+    // register mod BLOCKS to (EraOfMetalsMain.java)
     public static void registerSilverBlocks() {
         System.out.println("Registering Copper Blocks for " + MOD_ID);
 
@@ -51,7 +51,7 @@ public class CopperItems {
     // ############################### MOD ITEMS ####################################################################
 
     // copper nugget
-    public static final Item COPPER_NUGGET = registerItem("copper_nugget",
+    public static final Item COPPER_NUGGET = registerCopperItem("copper_nugget",
             new Item(new FabricItemSettings().group(metalsTab)));
 
 

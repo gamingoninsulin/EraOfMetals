@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "group": "coal",
+  "ingredients": [
+    {
+      "item": "eraofmetalsid:pressure_coal"
+    }
+  ],
+  "result": {
+    "item": "eraofmetalsid:pressure_coal_chunk",
+    "count": 9
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "group": "coal",
+  "ingredients": [
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "result": {
+    "item": "eraofmetalsid:pressure_coal",
+    "count": 1
+  }
+}
