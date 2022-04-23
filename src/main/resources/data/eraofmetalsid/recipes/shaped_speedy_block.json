@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "copper_ingot",
+  "pattern": [
+    "IG",
+    "GI"
+  ],
+  "key": {
+    "I": {
+      "item": "eraofmetalsid:silver_ingot"
+    },
+    "G": {
+      "item": "minecraft:grass_block"
+    }
+  },
+  "result": {
+    "item": "eraofmetalsid:speedy_block"
+  }
+}

@@ -1,5 +1,6 @@
 package me.gamingoninsulin.eraofmetals.items;
 
+import me.gamingoninsulin.eraofmetals.items.custom.CustomBlock;
 import me.gamingoninsulin.eraofmetals.items.custom.SilverProspectorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -90,4 +91,7 @@ public class SilverItems {
     public static final Block RAW_SILVER_BLOCK = registerBlock("raw_silver_block",
             new Block(FabricBlockSettings.of(Material.METAL).hardness(5f).requiresTool() ), metalsTab);
 
+    // Speedy Silver Block
+    public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
+            new CustomBlock(FabricBlockSettings.of(Material.METAL).hardness(5f).requiresTool() ), metalsTab);
 }
