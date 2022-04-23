@@ -1,5 +1,6 @@
 package me.gamingoninsulin.eraofmetals.items;
 
+import me.gamingoninsulin.eraofmetals.items.custom.SilverProspectorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -27,7 +28,7 @@ public class SilverItems {
 
     // register mod ITEMS
     public static void registerSilverItems() {
-        System.out.println("Registering Copper Items for " + MOD_ID);
+        System.out.println("Registering Silver Items for " + MOD_ID);
 
     }
 
@@ -47,7 +48,7 @@ public class SilverItems {
 
     // register mod BLOCKS
     public static void registerSilverBlocks() {
-        System.out.println("Registering Copper Blocks for " + MOD_ID);
+        System.out.println("Registering Silver Blocks for " + MOD_ID);
 
     }
 
@@ -66,6 +67,10 @@ public class SilverItems {
     // silver nugget
     public static final Item SILVER_NUGGET = registerItem("silver_nugget",
             new Item(new FabricItemSettings().group(metalsTab)));
+
+    // silver prospector
+    public static final Item SILVER_PROSPECTOR = registerItem("silver_prospector",
+            new SilverProspectorItem(new FabricItemSettings().group(metalsTab).maxDamage(64)));
 
     // ############################### MOD BLOCK ####################################################################
 

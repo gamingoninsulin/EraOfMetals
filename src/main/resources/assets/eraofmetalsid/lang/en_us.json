@@ -2,11 +2,16 @@
   "item.eraofmetalsid.raw_silver": "Raw Silver",
   "item.eraofmetalsid.silver_ingot": "Silver Ingot",
   "item.eraofmetalsid.silver_nugget": "Silver Nugget",
+  "item.eraofmetalsid.silver_prospector": "Silver Prospector",
+
+  "item.eraofmetalsid.copper_nugget": "Copper Nugget",
 
   "block.eraofmetalsid.silver_ore": "Silver Ore",
   "block.eraofmetalsid.deepslate_silver_ore": "Deepslate Silver Ore",
   "block.eraofmetalsid.silver_block": "Silver Block",
   "block.eraofmetalsid.raw_silver_block": "Raw Silver Block",
 
-  "itemGroup.eraofmetalsid.metalstab": "Era Of Metals"
+  "itemGroup.eraofmetalsid.metalstab": "Era Of Metals",
+
+  "item.eraofmetalsid.prospector.no_valuables": "No valuables Found"
 }

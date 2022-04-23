@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "silver_ingot",
+  "group": "copper_ingot",
   "ingredients": [
     {
-      "item": "eraofmetalsid:silver_block"
+      "item": "minecraft:copper_ingot"
     }
   ],
   "result": {
-    "item": "eraofmetalsid:silver_ingot",
+    "item": "eraofmetalsid:copper_nugget",
     "count": 9
   }
 }

@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "silver_ingot",
   "ingredients": [
     {
       "item": "eraofmetalsid:silver_ingot"

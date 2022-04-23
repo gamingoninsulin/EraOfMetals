@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " IN",
+    " SI",
+    "S  "
+  ],
+  "key": {
+    "I": {
+      "item": "eraofmetalsid:silver_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "N": {
+      "item": "eraofmetalsid:copper_nugget"
+    }
+  },
+  "result": {
+    "item": "eraofmetalsid:silver_prospector"
+  }
+}
