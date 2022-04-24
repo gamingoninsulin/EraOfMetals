@@ -44,7 +44,7 @@ preview about whats already in the mod:
 ![silver prospector](https://i.imgur.com/55nEW2k.png)
  
 #### special grass
-![special grass](https://i.imgur.com/NwU5Ht9.png)
+![special dirt](https://i.imgur.com/NfbNEzm.png)
 
 <br>
 <br>
