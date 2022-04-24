@@ -13,7 +13,7 @@ public class EraOfMetalsMain implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// ores blocks
+		// ore blocks
 		EraOfMetalsOres.registerOreBlocks();
 
 		// silver

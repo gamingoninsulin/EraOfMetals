@@ -80,7 +80,7 @@ public class SilverItems {
 
     // silver block
     public static final Block SILVER_BLOCK = registerSilverBlock("silver_block",
-            new Block(FabricBlockSettings.of(Material.METAL).hardness(5f).requiresTool()), metalsTab);
+            new Block(FabricBlockSettings.of(Material.METAL).hardness(5f).sounds(BlockSoundGroup.METAL).requiresTool()), metalsTab);
 
     // raw silver block
     public static final Block RAW_SILVER_BLOCK = registerSilverBlock("raw_silver_block",

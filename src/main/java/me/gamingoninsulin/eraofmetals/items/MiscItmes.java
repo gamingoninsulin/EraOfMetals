@@ -8,6 +8,7 @@ import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -78,8 +79,8 @@ public class MiscItmes {
     // ############################### MOD TOOLS ####################################################################
 
     // ############################### MOD BLOCK ####################################################################
-    // Speedy Block
-    public static final Block SPEEDY_BLOCK = registerMiscBlock("speedy_block",
-            new CustomBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.6f).requiresTool() ), metalsTab);
+    // Speedy dirt
+    public static final Block SPEEDY_DIRT = registerMiscBlock("speedy_dirt",
+            new CustomBlock(FabricBlockSettings.of(Material.SOIL).hardness(0.5f).sounds(BlockSoundGroup.GRAVEL).requiresTool() ), metalsTab);
 
 }
